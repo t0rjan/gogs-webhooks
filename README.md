@@ -57,6 +57,7 @@ allowUser = ["weisd"]
 
 ```
 
-nohup ./gogs_web_hook -c app.toml > hook.log 2>&1 &
+
+echo "sudo -u www nohup /home/www/web_hook/gogs_web_hook -c /home/www/web_hook/app.toml >> /home/wwwlogs/hook.log 2>&1 &" >> /etc/rc.local
 
 ```
